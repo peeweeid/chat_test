@@ -15,7 +15,7 @@ const TodoList = () => {
 return unsubscribe;
   },[])
   return (
-    <div>
+    <div className='h-[600px] bg-scroll bg-lime-300 container  overflow-y-scroll'>
         {todos.map(todo => 
             <div key={todo.id} className="container mt-2 py-4 rounded-2xl shadow-xl max-w-md bg-slate-500">
                 <h1 className='mb-2 text-3xl font-bold'>{todo.title}</h1>
